@@ -1,0 +1,392 @@
+body {
+    background: rgb(15, 15, 15);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h1 {
+    font-family: Georgia;
+}
+
+h2 {
+    font-family: Georgia;
+}
+
+p {
+    font-family: Baskerville;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+.headerPhoto {
+    background-image: url("headerbackground.jpg");
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    box-shadow:0px 0px 10px 1px black;
+    transition: 1s;
+}
+
+.random_food_trivia {
+    display: none;
+    background: rgb(198, 197, 185);
+    margin: 0px 0px 0px 0px !important;
+}
+
+.search {
+    margin: 0px 0px 0px 0px
+}
+
+.logo {
+    margin: 0px 0px 15px 0px !important;
+}
+
+#map {
+    margin: 0px 0px 0px 0px !important;
+}
+
+#page-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 50px 0px 50px;
+}
+
+.results{
+    border-radius: 0px 0px 0px 25px;
+    width: 25%;
+    background: white;
+    text-align: center;
+    height: 800px;
+    overflow: scroll;
+    box-shadow:0px 0px 0px 1px #8E793E inset;
+}
+
+.resultGuide {
+    margin: 50px 25px 0px 25px;
+}
+
+.recipeGuide {
+    margin: 50px 50px 25px 50px;
+    padding: 5px;
+    border: #AD974F;
+    border-style: groove;
+    border-radius:10px;
+}
+
+.guideForUseSmall {
+    margin: 50px 50px 25px 50px;
+    padding: 5px;
+    border: #AD974F;
+    border-style: groove;
+    border-radius:10px;
+}
+
+
+.recipe{
+    width: 50%;
+    background: white;
+    text-align: center;
+    position: relative;
+    box-shadow:0px 0px 0px 1px #8E793E inset;
+    height: 800px;
+    overflow: scroll;
+}
+
+.grocery{
+    text-align: center;
+    border-radius: 0px 0px 25px 0px;
+    width: 25%;
+    background: white;
+    height: 800px;
+    overflow: scroll;
+    box-shadow:0px 0px 0px 1px #8E793E inset;
+}
+
+.guideForUseSmall {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .results  {
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+    }
+    .recipe {
+        width: 100%;
+        border-radius: 25px 25px 25px 25px;
+        border: none;
+    }
+    .grocery {
+        width: 100%;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .guideForUseSmall {
+        display: block;
+    }
+    .recipeGuide {
+        display: none;
+    }
+}
+
+
+.search_results_list {
+    margin: 0px 25px 0px 25px;
+}
+
+.results_fig {
+    margin: 40px 25px 0px 25px;
+}
+
+.results_fig > img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.results_fig > img:hover{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 5px black;
+}
+
+.results_name {
+    font-size: 24px;
+    text-align: center;
+    color: #231F20;
+    text-decoration: underline;
+    text-decoration-color:rgb(47, 70, 76);
+    margin: 25px;
+}
+
+.results_author {
+    font-size: 15px;
+    text-align: center;
+    color: #231F20;
+    text-decoration: underline;
+    text-decoration-color:rgb(47, 70, 76);
+    margin: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.shopping__delete {
+    width: 10px;
+    height: 10px;
+}
+
+.logo {
+    background: transparent;
+    border: none;
+}
+
+footer {
+    margin-top: 125px;
+    background: #8E793E;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#mapPage {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+#mapText {
+    text-align: center;
+    color: #AD974F;
+    font-family: Baskerville;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#homeLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logoMap {
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.recipe_figure > img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 35px;
+}
+
+.recipe__ingredient-list {
+    margin: 0px 50px 0px 50px;
+}
+
+.recipe__directions-text {
+    margin: 0px 50px 0px 50px;
+}
+
+.heading-2 {
+    margin: 0px 50px 25px 50px;
+}
+
+.recipe__item {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.recipe__unit {
+    margin: 0px 3px 0px 3px;
+}
+
+.shopping_item {
+    border-bottom: 2px #AD974F solid ;
+    margin: 25px;
+}
+
+.deleteButton {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#addToList {
+    margin: 25px 50px 25px 50px;
+    border-radius: 2px;
+    background-color: #AD974F;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#addToList:hover {
+    transform: scale(1.1);
+}
+
+#addToList:focus,#addToList:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.directions {
+    display: inline-block;
+    margin: 25px auto 50px auto;
+    color:#704491;
+}
+
+
+
+
+#galleryButton {
+    margin: 33px 25px 0px 25px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+
+#galleryButton:hover {
+    box-shadow: 0 0 4px white;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#galleryImagesRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImage {
+    margin-top: 25px;
+    flex: 33.33%;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryImage img {
+    transition: transform .5s ease;
+}
+
+.galleryImage:hover img {
+    transform: scale(1.05);
+}
+
+#appImage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#galleryHeader {
+    color: #AD974F;
+    font-family: Baskerville;
+    letter-spacing: 5px;
+    text-decoration: underline #AD974F ;
+}
+
+.galleryText {
+    color: #AD974F;
+    font-family: Baskerville;
+    margin-top: 25px;
+}
+
+
+.logoGallery {
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.myGroceryList {
+    margin: 50px 25px 25px 25px;
+}
+
+.shopping__count-value {
+    cursor: pointer;
+}
+
+.shopping__count-value:focus, .shopping__count-value:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.search_icon {
+    cursor: pointer;
+}
+
+article h1 {
+    font-size: 28px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
